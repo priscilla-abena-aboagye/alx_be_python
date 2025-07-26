@@ -1,15 +1,11 @@
 from datetime import datetime, timedelta
 
+
 def display_current_datetime():
     current_date = datetime.now()
-    year = current_date.year
-    month = f"{current_date.month :02}"
-    day = f"{current_date.day:02}"
-    hour = f"{current_date.hour:02}"
-    minutes = f"{current_date.minute:02}"
-    second = f"{current_date.second:02}"
-    print(f"{year}-{month}-{day} {hour}:{minutes}:{second}") # “YYYY-MM-DD HH:MM:SS”.
+    print(current_date.strftime("%Y-%m-%d %H:%M:%S"))
     return current_date
+
 
 
 def calculate_future_date():
