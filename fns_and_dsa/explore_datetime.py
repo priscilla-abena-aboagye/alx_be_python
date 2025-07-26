@@ -18,5 +18,6 @@ def calculate_future_date():
     month = f"{future_date.month :02}"
     day = f"{future_date.day :02}"
     print(f"{year}-{month}-{day}") # “YYYY-MM-DD”.
+    print(future_date.strftime("%Y-%m-%d"))
         
    
